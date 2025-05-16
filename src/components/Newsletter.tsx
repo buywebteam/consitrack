@@ -19,8 +19,8 @@ const Newsletter = () => {
         email,
         subscribedAt: Timestamp.now(),
       });
-      setSuccess(true);
       setEmail("");
+      setSuccess(true);
       toast.success("Newsletter Subscribed successfully!");
     } catch (err) {
       console.error(err);
